@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dossiê Técnico — Chip AP-E | CSGTI Tech Ltda.</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { background-color: #fff; color: #222; line-height: 1.7; }
+    header { background: #0f2b48; color: #fff; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; }
+    header a { color: #fff; text-decoration: none; font-weight: bold; }
+    
+    .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+    .voltar-link { display: inline-block; margin-bottom: 20px; color: #0f2b48; text-decoration: none; font-weight: bold; }
+    .voltar-link:hover { text-decoration: underline; }
+    
+    h1 { color: #0f2b48; font-size: 32px; border-bottom: 3px solid #0f2b48; padding-bottom: 10px; margin-bottom: 25px; }
+    h2 { color: #0f2b48; font-size: 22px; margin-top: 35px; margin-bottom: 15px; border-left: 4px solid #0f2b48; padding-left: 10px; }
+    p { margin-bottom: 18px; text-align: justify; color: #333; }
+    ul { margin-left: 25px; margin-bottom: 20px; }
+    li { margin-bottom: 8px; }
+    
+    .box-destaque { background: #f0f4f8; border: 1px solid #d0dfec; padding: 20px; border-radius: 6px; margin: 25px 0; }
+    .box-destaque h3 { color: #0f2b48; margin-bottom: 10px; }
+
+    footer { background: #0b1e33; color: #a0b2c6; text-align: center; padding: 20px; margin-top: 60px; font-size: 13px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div><strong>CSGTI TECH LTDA.</strong> | Divisão de Semicondutores</div>
+    <a href="index.html">← Voltar ao Site</a>
+  </header>
+
+  <div class="container">
+    <a href="index.html" class="voltar-link">← Voltar para a página principal</a>
+    
+    <h1>DOSSIÊ TÉCNICO: CHIP AP-E</h1>
+    <p><strong>Tecnologia:</strong> Arquitetura de Processamento Espiral (AP-E)</p>
+    <p><strong>Propriedade Intelectual:</strong> CSGTI Tech Ltda. | <strong>Idealizador:</strong> Moisés Jovino</p>
+
+    <h2>1. Visão Geral e Conceito do Chip AP-E</h2>
+    <p>
+      O *Chip AP-E* representa um salto qualitativo no paradigma de processamento de dados. Ao contrário das arquiteturas tradicionais von Neumann baseadas na execução linear e sequencial de instruções, o AP-E utiliza o princípio de *Processamento em Espiral Contínua*. Essa abordagem reduz drasticamente os gargalos de barramento (bus bottleneck), permitindo que fluxos de dados massivos e eventos concorrentes sejam analisados e processados simultaneamente em ciclos espirais de instrução.
+    </p>
+
+    <h2>2. Engenharia e Arquitetura de Desenvolvimento</h2>
+    <p>
+      O desenvolvimento lógico e físico do Chip AP-E baseia-se em três pilares fundamentais de engenharia de computação:
+    </p>
+    <ul>
+      <li><strong>Gerenciamento Espiral de Memória:</strong> Organização dinâmica dos registradores que distribui as cargas de trabalho conforme a prioridade dos eventos de entrada, eliminando tempo de espera (latency).</li>
+      <li><strong>Paralelismo Nativo:</strong> Estrutura de hardware otimizada para execução de algoritmos de alta complexidade sem a necessidade de overclocking ou consumo excessivo de energia.</li>
+      <li><strong>Normalização e Integridade Referencial em Nível de Hardware:</strong> Tratamento direto de instruções estruturadas garantindo integridade de dados antes mesmo da gravação em camadas de persistência (bancos de dados).</li>
+    </ul>
+
+    <div class="box-destaque">
+      <h3>Estratégia de Captação de Fomento a Fundo Perdido (P&D)</h3>
+      <p>
+        Para a fase de prototipagem avançada, fabricação do Die e testes em escala piloto, a <strong>CSGTI Tech Ltda.</strong> estrutura o plano de investimento com foco em editais de subvenção econômica e fomento a fundo perdido.
+      </p>
+      <p>
+        O modelo contempla a submissão formal de projetos junto a órgãos de incentivo tecnológico (como <strong>FINEP</strong>, <strong>FAPESQ</strong> e linhas de inovação do <strong>BNDES</strong>), alinhando o Chip AP-E às diretrizes nacionais de soberania em semicondutores e desenvolvimento de tecnologia de ponta no Brasil.
+      </p>
+    </div>
+
+    <h2>3. Aplicações Práticas no Mercado</h2>
+    <p>O Chip AP-E foi concebido para atender setores críticos que exigem altíssimo desempenho:</p>
+    <ul>
+      <li><strong>Automação e Robótica Industrial:</strong> Processamento imediato de sensores operando em ambientes de manufatura inteligente (Indústria 4.0).</li>
+      <li><strong>Sistemas Financeiros e Transacionais:</strong> Validação instantânea de regras de negócio e prevenção a fraudes em milissegundos.</li>
+      <li><strong>Centros de Dados e Criptografia:</strong> Algoritmos de segurança e cifra executados nativamente nos barramentos da espiral.</li>
+    </ul>
+
+    <h2>4. Conclusão e Próximos Passos</h2>
+    <p>
+      O projeto encontra-se em fase de consolidação lógica e documentação de patente de inovação, posicionando a CSGTI Tech Ltda. na vanguarda do desenvolvimento de semicondutores e arquiteturas computacionais de alto impacto.
+    </p>
+  </div>
+
+  <footer>
+    &copy; 2026 CSGTI Tech Ltda. — Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
