@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Data Center a Seco | CSGTI-TECH</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f6fa;
+            color: #243247;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(
+                135deg, #071b35, #116b87
+            );
+            color: white;
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            font-size: 17px;
+        }
+
+        nav {
+            background: #102d4b;
+            padding: 16px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 12px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: #60e0c4;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px #00000010;
+        }
+
+        h2 {
+            color: #116b87;
+            margin-bottom: 18px;
+        }
+
+        h3 {
+            color: #102d4b;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .destaque {
+            background: #e6f7f4;
+            border-left: 5px solid #149b83;
+            padding: 18px;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: #edf5fa;
+            padding: 22px;
+            border-radius: 10px;
+            border-top: 4px solid #116b87;
+        }
+
+        .card p {
+            margin-bottom: 0;
+        }
+
+        .etapas {
+            counter-reset: passo;
+            list-style: none;
+            padding: 0;
+        }
+
+        .etapas li {
+            background: #edf5fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+
+        .faq-pergunta {
+            background: #edf5fa;
+            color: #102d4b;
+            padding: 14px;
+            border: none;
+            border-radius: 7px;
+            width: 100%;
+            text-align: left;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .faq-pergunta:hover {
+            background: #d9edf5;
+        }
+
+        .faq-resposta {
+            display: none;
+            padding: 15px;
+        }
+
+        .faq-resposta.ativa {
+            display: block;
+        }
+
+        footer {
+            background: #071b35;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 27px;
+            }
+
+            nav a {
+                margin: 7px;
+                font-size: 14px;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="inicio">
+        <h1>DATA CENTER A SECO</h1>
+        <p>
+            Tecnologia, Eficiência e Sustentabilidade
+        </p>
+        <p>Projeto CSGTI-TECH</p>
+    </header>
+
+    <nav aria-label="Menu principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#objetivos">Objetivos</a>
+        <a href="#funcionamento">Funcionamento</a>
+        <a href="#tecnologias">Tecnologias</a>
+        <a href="#vantagens">Vantagens</a>
+        <a href="#faq">FAQ</a>
+    </nav>
+
+    <main>
+
+        <section id="sobre">
+            <h2>1. O que é um Data Center a Seco?</h2>
+
+            <p>
+                Um Data Center é uma instalação
+                utilizada para armazenar, processar
+                e distribuir informações digitais.
+            </p>
+
+            <p>
+                O Data Center a Seco utiliza sistemas
+                de resfriamento que reduzem ou evitam
+                o consumo direto de água no processo
+                de refrigeração.
+            </p>
+
+            <p>
+                Essa tecnologia busca manter os
+                servidores em temperaturas adequadas,
+                contribuindo para a eficiência
+                operacional e a sustentabilidade.
+            </p>
+
+            <div class="destaque">
+                <strong>Importante:</strong>
+                um Data Center a Seco não significa
+                necessariamente ausência total de água
+                em toda a instalação. O conceito
+                está relacionado principalmente
+                ao sistema de resfriamento.
+            </div>
+        </section>
+
+        <section id="objetivos">
+            <h2>2. Objetivos do Projeto</h2>
+
+            <h3>Objetivo Geral</h3>
+
+            <p>
+                Apresentar uma proposta de Data Center
+                com resfriamento a seco, destacando
+                suas tecnologias, seu funcionamento
+                e seus benefícios ambientais.
+            </p>
+
+            <h3>Objetivos Específicos</h3>
+
+            <ul>
+                <li>
+                    Reduzir o consumo de água
+                    no sistema de refrigeração.
+                </li>
+                <li>
+                    Proteger os equipamentos
+                    contra o superaquecimento.
+                </li>
+                <li>
+                    Melhorar a eficiência operacional.
+                </li>
+                <li>
+                    Apresentar tecnologias modernas
+                    de resfriamento.
+                </li>
+                <li>
+                    Incentivar práticas sustentáveis
+                    no setor de tecnologia.
+                </li>
+            </ul>
+        </section>
+
+        <section id="funcionamento">
+            <h2>3. Como Funciona?</h2>
+
+            <p>
+                Os servidores produzem calor durante
+                o processamento de dados. Esse calor
+                precisa ser removido para manter
+                o funcionamento adequado.
+            </p>
+
+            <ol class="etapas">
+                <li>
+                    <strong>Etapa 1:</strong>
+                    Os servidores processam dados
+                    e geram calor.
+                </li>
+
+                <li>
+                    <strong>Etapa 2:</strong>
+                    O sistema de refrigeração
+                    coleta o calor produzido.
+                </li>
+
+                <li>
+                    <strong>Etapa 3:</strong>
+                    O calor é transferido para
+                    um sistema de troca térmica.
+                </li>
+
+                <li>
+                    <strong>Etapa 4:</strong>
+                    O calor é dissipado para
+                    o ambiente externo, sem
+                    depender necessariamente
+                    da evaporação de água.
+                </li>
+
+                <li>
+                    <strong>Etapa 5:</strong>
+                    Sensores monitoram a temperatura
+                    e ajustam o funcionamento
+                    dos equipamentos.
+                </li>
+            </ol>
+        </section>
+
+        <section id="tecnologias">
+            <h2>4. Tecnologias Utilizadas</h2>
+
+            <div class="cards">
+
+                <article class="card">
+                    <h3>Dry Coolers</h3>
+                    <p>
+                        Equipamentos que transferem
+                        calor para o ar externo,
+                        sem utilizar evaporação
+                        de água no processo.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Free Cooling</h3>
+                    <p>
+                        Aproveita condições favoráveis
+                        do ambiente externo para
+                        reduzir a necessidade
+                        de refrigeração mecânica.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Sensores Inteligentes</h3>
+                    <p>
+                        Monitoram temperatura
+                        e umidade, permitindo
+                        ajustes automáticos.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Automação</h3>
+                    <p>
+                        Controla equipamentos
+                        e ajuda a otimizar
+                        o consumo de energia.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="vantagens">
+            <h2>5. Vantagens e Desafios</h2>
+
+            <div class="cards">
+
+                <article class="card">
+                    <h3>Economia de Água</h3>
+                    <p>
+                        Redução do uso de água
+                        no sistema de refrigeração.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Sustentabilidade</h3>
+                    <p>
+                        Menor pressão sobre
+                        os recursos hídricos.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Monitoramento</h3>
+                    <p>
+                        Controle contínuo das
+                        condições térmicas.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Desafios</h3>
+                    <p>
+                        Em climas quentes, o sistema
+                        pode exigir mais energia
+                        ou refrigeração complementar.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="sustentabilidade">
+            <h2>6. Sustentabilidade</h2>
+
+            <p>
+                A sustentabilidade é um dos principais
+                motivos para estudar tecnologias
+                de resfriamento a seco.
+            </p>
+
+            <p>
+                Entretanto, a escolha do sistema
+                deve considerar o clima local,
+                o consumo de energia, os custos
+                e a eficiência dos equipamentos.
+            </p>
+
+            <div class="destaque">
+                O objetivo é buscar um equilíbrio
+                entre economia de água, eficiência
+                energética e segurança operacional.
+            </div>
+        </section>
+
+        <section id="faq">
+            <h2>7. Perguntas Frequentes</h2>
+
+            <div class="faq-item">
+                <button class="faq-pergunta"
+                        aria-expanded="false"
+                        aria-controls="resposta1">
+                    O que significa Data Center a Seco?
+                </button>
+
+                <div class="faq-resposta" id="resposta1">
+                    É um centro de dados que utiliza
+                    tecnologias de refrigeração
+                    com consumo reduzido ou nulo
+                    de água no processo de resfriamento.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-pergunta"
+                        aria-expanded="false"
+                        aria-controls="resposta2">
+                    Quais são as principais vantagens?
+                </button>
+
+                <div class="faq-resposta" id="resposta2">
+                    A principal vantagem é a redução
+                    do consumo de água, além da
+                    possibilidade de maior controle
+                    sobre os sistemas de refrigeração.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-pergunta"
+                        aria-expanded="false"
+                        aria-controls="resposta3">
+                    O sistema funciona em climas quentes?
+                </button>
+
+                <div class="faq-resposta" id="resposta3">
+                    Sim, mas pode exigir equipamentos
+                    adicionais e maior consumo
+                    de energia para manter
+                    as temperaturas adequadas.
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusao">
+            <h2>8. Conclusão</h2>
+
+            <p>
+                O Data Center a Seco representa
+                uma alternativa tecnológica
+                para reduzir o consumo de água
+                nos sistemas de refrigeração
+                de centros de dados.
+            </p>
+
+            <p>
+                Sua implementação exige planejamento
+                e avaliação das condições ambientais
+                e energéticas.
+            </p>
+
+            <p>
+                Este projeto da CSGTI-TECH demonstra
+                como o Desenvolvimento Front-End Web
+                pode ser utilizado para apresentar
+                informações tecnológicas por meio
+                de uma página organizada,
+                responsiva e interativa.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p><strong>CSGTI-TECH</strong></p>
+        <p>Projeto Data Center a Seco</p>
+        <p>Desenvolvimento Front-End Web</p>
+    </footer>
+
+    <script>
+        const perguntas = document.querySelectorAll(
+            ".faq-pergunta"
+        );
+
+        perguntas.forEach(function(pergunta) {
+            pergunta.addEventListener("click", function() {
+                const resposta = document.getElementById(
+                    pergunta.getAttribute("aria-controls")
+                );
+
+                const aberta = resposta.classList.toggle(
+                    "ativa"
+                );
+
+                pergunta.setAttribute(
+                    "aria-expanded",
+                    String(aberta)
+                );
+            });
+        });
+    </script>
+
+</body>
+</html>
