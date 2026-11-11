@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Refina Mais Brasil 59 | CSGTI-TECH</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #092c4c;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background-color: #145a86;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+
+        section {
+            background-color: white;
+            margin-bottom: 25px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #00000012;
+        }
+
+        h2 {
+            color: #145a86;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .destaque {
+            background-color: #e4f2fa;
+            border-left: 5px solid #145a86;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 5px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: #eaf3fa;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #145a86;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #145a86;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #092c4c;
+        }
+
+        #resultado {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #092c4c;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 25px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 6px;
+            }
+
+            section {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>REFINA MAIS BRASIL 59</h1>
+        <p>Inovação, Tecnologia e Sustentabilidade</p>
+        <p>Projeto CSGTI-TECH</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#objetivo">Objetivos</a>
+        <a href="#metodologia">Metodologia</a>
+        <a href="#aplicacoes">Aplicações</a>
+        <a href="#sustentabilidade">Sustentabilidade</a>
+        <a href="#conclusao">Conclusão</a>
+    </nav>
+
+    <main>
+
+        <section id="inicio">
+            <h2>1. Apresentação do Projeto</h2>
+
+            <p>
+                O Refina Mais Brasil 59 é uma proposta
+                tecnológica apresentada pela CSGTI-TECH,
+                voltada ao processamento e à purificação
+                de terras raras e minerais estratégicos.
+            </p>
+
+            <p>
+                O projeto busca contribuir para o
+                desenvolvimento industrial brasileiro,
+                incentivando a inovação e a produção
+                de materiais de alta qualidade.
+            </p>
+
+            <div class="destaque">
+                <strong>Proposta do projeto:</strong>
+                alcançar níveis elevados de pureza,
+                com meta de até 99,999%, dependendo
+                do material e do processo utilizado.
+            </div>
+        </section>
+
+        <section id="objetivo">
+            <h2>2. Objetivo Geral</h2>
+
+            <p>
+                Desenvolver uma proposta de tecnologia
+                para o refino e a purificação de
+                minerais estratégicos no Brasil.
+            </p>
+
+            <h2>Objetivos Específicos</h2>
+
+            <ul>
+                <li>
+                    Incentivar a inovação tecnológica.
+                </li>
+
+                <li>
+                    Melhorar os processos de purificação.
+                </li>
+
+                <li>
+                    Contribuir para a indústria nacional.
+                </li>
+
+                <li>
+                    Reduzir a dependência de processos
+                    realizados no exterior.
+                </li>
+
+                <li>
+                    Promover práticas sustentáveis.
+                </li>
+            </ul>
+        </section>
+
+        <section id="metodologia">
+            <h2>3. Metodologia</h2>
+
+            <p>
+                O processo proposto envolve diferentes
+                etapas de preparação, separação e
+                purificação dos materiais.
+            </p>
+
+            <ol>
+                <li>
+                    Identificação dos minerais.
+                </li>
+
+                <li>
+                    Preparação dos materiais.
+                </li>
+
+                <li>
+                    Separação química dos elementos.
+                </li>
+
+                <li>
+                    Purificação dos materiais.
+                </li>
+
+                <li>
+                    Análise e controle de qualidade.
+                </li>
+
+                <li>
+                    Preparação para aplicações industriais.
+                </li>
+            </ol>
+        </section>
+
+        <section id="aplicacoes">
+            <h2>4. Aplicações Industriais</h2>
+
+            <p>
+                Os minerais estratégicos podem ser
+                utilizados em diferentes setores
+                tecnológicos e industriais.
+            </p>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Eletrônica</h3>
+                    <p>
+                        Componentes eletrônicos
+                        e materiais tecnológicos.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Energia Renovável</h3>
+                    <p>
+                        Motores elétricos e
+                        turbinas eólicas.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Indústria Automotiva</h3>
+                    <p>
+                        Tecnologias utilizadas
+                        em veículos elétricos.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Indústria Aeroespacial</h3>
+                    <p>
+                        Materiais especiais para
+                        equipamentos avançados.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="sustentabilidade">
+            <h2>5. Sustentabilidade</h2>
+
+            <p>
+                O projeto propõe medidas para reduzir
+                possíveis impactos ambientais durante
+                o processamento dos minerais.
+            </p>
+
+            <ul>
+                <li>Reaproveitamento da água.</li>
+                <li>Controle dos resíduos químicos.</li>
+                <li>Uso eficiente de energia.</li>
+                <li>Redução de desperdícios.</li>
+                <li>Responsabilidade ambiental.</li>
+            </ul>
+        </section>
+
+        <section id="interatividade">
+            <h2>6. Interatividade</h2>
+
+            <p>
+                Qual é uma das principais metas
+                do projeto Refina Mais Brasil 59?
+            </p>
+
+            <button onclick="verificarResposta()">
+                Ver resposta
+            </button>
+
+            <p id="resultado" aria-live="polite"></p>
+        </section>
+
+        <section id="conclusao">
+            <h2>7. Conclusão</h2>
+
+            <p>
+                O Refina Mais Brasil 59 apresenta
+                uma proposta de inovação relacionada
+                ao processamento e à purificação
+                de minerais estratégicos.
+            </p>
+
+            <p>
+                Na disciplina de Desenvolvimento
+                Front-End Web, esta página demonstra
+                a aplicação de HTML, CSS e JavaScript
+                na apresentação de informações
+                de maneira organizada e interativa.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>CSGTI-TECH</p>
+        <p>Projeto Refina Mais Brasil 59</p>
+        <p>Desenvolvimento Front-End Web</p>
+    </footer>
+
+    <script>
+        function verificarResposta() {
+            const resultado =
+                document.getElementById("resultado");
+
+            resultado.textContent =
+                "Uma das principais metas é alcançar " +
+                "elevados níveis de pureza nos minerais " +
+                "estratégicos, contribuindo para o " +
+                "desenvolvimento tecnológico brasileiro.";
+        }
+    </script>
+
+</body>
+</html>
