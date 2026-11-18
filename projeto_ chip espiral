@@ -1,87 +1,326 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dossiê Técnico — Chip AP-E | CSGTI Tech Ltda.</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-    body { background-color: #fff; color: #222; line-height: 1.7; }
-    header { background: #0f2b48; color: #fff; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; }
-    header a { color: #fff; text-decoration: none; font-weight: bold; }
-    
-    .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
-    .voltar-link { display: inline-block; margin-bottom: 20px; color: #0f2b48; text-decoration: none; font-weight: bold; }
-    .voltar-link:hover { text-decoration: underline; }
-    
-    h1 { color: #0f2b48; font-size: 32px; border-bottom: 3px solid #0f2b48; padding-bottom: 10px; margin-bottom: 25px; }
-    h2 { color: #0f2b48; font-size: 22px; margin-top: 35px; margin-bottom: 15px; border-left: 4px solid #0f2b48; padding-left: 10px; }
-    p { margin-bottom: 18px; text-align: justify; color: #333; }
-    ul { margin-left: 25px; margin-bottom: 20px; }
-    li { margin-bottom: 8px; }
-    
-    .box-destaque { background: #f0f4f8; border: 1px solid #d0dfec; padding: 20px; border-radius: 6px; margin: 25px 0; }
-    .box-destaque h3 { color: #0f2b48; margin-bottom: 10px; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dossiê Técnico — Chip AP-E | CSGTI Tech Ltda.</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    footer { background: #0b1e33; color: #a0b2c6; text-align: center; padding: 20px; margin-top: 60px; font-size: 13px; }
-  </style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f3f6fa;
+            color: #243247;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(135deg, #071b35, #116b87);
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 34px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: #102d4b;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 12px;
+            display: inline-block;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #60e0c4;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        .voltar-link {
+            display: inline-block;
+            margin-bottom: 25px;
+            color: #116b87;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .voltar-link:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            background: white;
+            padding: 35px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+            border-top: 4px solid #116b87;
+        }
+
+        h2 {
+            color: #116b87;
+            font-size: 22px;
+            margin-bottom: 18px;
+        }
+
+        .meta-info {
+            background: #edf5fa;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            border-left: 4px solid #102d4b;
+        }
+
+        .meta-info p {
+            margin-bottom: 5px;
+            color: #102d4b;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+            color: #333;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .box-destaque {
+            background: #e6f7f4;
+            border-left: 5px solid #149b83;
+            padding: 22px;
+            border-radius: 6px;
+            margin-top: 25px;
+        }
+
+        .box-destaque h3 {
+            color: #0f2b48;
+            margin-bottom: 12px;
+            font-size: 18px;
+        }
+
+        .box-destaque p {
+            margin-bottom: 10px;
+        }
+
+        .box-destaque p:last-child {
+            margin-bottom: 0;
+        }
+
+        .image-container {
+            margin: 25px 0;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .image-legenda {
+            color: #555;
+            font-size: 14px;
+            margin-top: 8px;
+            font-style: italic;
+        }
+
+        .video-container {
+            margin-top: 25px;
+            text-align: center;
+            background: #0f2b48;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .video-container video {
+            width: 100%;
+            max-height: 480px;
+            border-radius: 6px;
+            outline: none;
+        }
+
+        .video-legenda {
+            color: #a0b2c6;
+            font-size: 14px;
+            margin-top: 12px;
+            text-align: center;
+        }
+
+        footer {
+            background: #071b35;
+            color: #a0b2c6;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 26px;
+            }
+            nav a {
+                margin: 6px 8px;
+                font-size: 13px;
+            }
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <div><strong>CSGTI TECH LTDA.</strong> | Divisão de Semicondutores</div>
-    <a href="index.html">← Voltar ao Site</a>
-  </header>
+    <header>
+        <h1>DOSSIÊ TÉCNICO: CHIP AP-E</h1>
+        <p>Arquitetura de Processamento Espiral (AP-E) — CSGTI Tech Ltda.</p>
+    </header>
 
-  <div class="container">
-    <a href="index.html" class="voltar-link">← Voltar para a página principal</a>
-    
-    <h1>DOSSIÊ TÉCNICO: CHIP AP-E</h1>
-    <p><strong>Tecnologia:</strong> Arquitetura de Processamento Espiral (AP-E)</p>
-    <p><strong>Propriedade Intelectual:</strong> CSGTI Tech Ltda. | <strong>Idealizador:</strong> Moisés Jovino</p>
+    <nav aria-label="Navegação interna">
+        <a href="#visao-geral">Visão Geral</a>
+        <a href="#engenharia">Engenharia</a>
+        <a href="#fomento">Fomento P&D</a>
+        <a href="#aplicacoes">Aplicações e Vídeo</a>
+        <a href="#conclusao">Conclusão</a>
+    </nav>
 
-    <h2>1. Visão Geral e Conceito do Chip AP-E</h2>
-    <p>
-      O *Chip AP-E* representa um salto qualitativo no paradigma de processamento de dados. Ao contrário das arquiteturas tradicionais von Neumann baseadas na execução linear e sequencial de instruções, o AP-E utiliza o princípio de *Processamento em Espiral Contínua*. Essa abordagem reduz drasticamente os gargalos de barramento (bus bottleneck), permitindo que fluxos de dados massivos e eventos concorrentes sejam analisados e processados simultaneamente em ciclos espirais de instrução.
-    </p>
+    <div class="container">
+        <a href="index.html" class="voltar-link">← Voltar para a página principal / Início</a>
 
-    <h2>2. Engenharia e Arquitetura de Desenvolvimento</h2>
-    <p>
-      O desenvolvimento lógico e físico do Chip AP-E baseia-se em três pilares fundamentais de engenharia de computação:
-    </p>
-    <ul>
-      <li><strong>Gerenciamento Espiral de Memória:</strong> Organização dinâmica dos registradores que distribui as cargas de trabalho conforme a prioridade dos eventos de entrada, eliminando tempo de espera (latency).</li>
-      <li><strong>Paralelismo Nativo:</strong> Estrutura de hardware otimizada para execução de algoritmos de alta complexidade sem a necessidade de overclocking ou consumo excessivo de energia.</li>
-      <li><strong>Normalização e Integridade Referencial em Nível de Hardware:</strong> Tratamento direto de instruções estruturadas garantindo integridade de dados antes mesmo da gravação em camadas de persistência (bancos de dados).</li>
-    </ul>
+        <div class="meta-info">
+            <p><strong>Tecnologia:</strong> Arquitetura de Processamento Espiral (AP-E)</p>
+            <p><strong>Propriedade Intelectual:</strong> CSGTI Tech Ltda. | <strong>Idealizador:</strong> Moisés Jovino</p>
+            <p><em>Formato de Apresentação Acadêmica (Slides & Web)</em></p>
+        </div>
 
-    <div class="box-destaque">
-      <h3>Estratégia de Captação de Fomento a Fundo Perdido (P&D)</h3>
-      <p>
-        Para a fase de prototipagem avançada, fabricação do Die e testes em escala piloto, a <strong>CSGTI Tech Ltda.</strong> estrutura o plano de investimento com foco em editais de subvenção econômica e fomento a fundo perdido.
-      </p>
-      <p>
-        O modelo contempla a submissão formal de projetos junto a órgãos de incentivo tecnológico (como <strong>FINEP</strong>, <strong>FAPESQ</strong> e linhas de inovação do <strong>BNDES</strong>), alinhando o Chip AP-E às diretrizes nacionais de soberania em semicondutores e desenvolvimento de tecnologia de ponta no Brasil.
-      </p>
+        <section id="visao-geral">
+            <h2>1. Visão Geral e Conceito do Chip AP-E</h2>
+            <p>
+                O <strong>Chip AP-E</strong> representa um salto qualitativo no paradigma de processamento de dados. Ao contrário das arquiteturas tradicionais von Neumann baseadas na execução linear e sequencial de instruções, o AP-E utiliza o princípio de <em>Processamento em Espiral Contínua</em>.
+            </p>
+            <p>
+                Essa abordagem reduz drasticamente os gargalos de barramento (<em>bus bottleneck</em>), permitindo que fluxos de dados massivos e eventos concorrentes sejam analisados e processados simultaneamente em ciclos espirais de instrução.
+            </p>
+        </section>
+
+        <section id="engenharia">
+            <h2>2. Engenharia e Arquitetura de Desenvolvimento</h2>
+            <p>
+                O desenvolvimento lógico e físico do Chip AP-E baseia-se em três pilares fundamentais de engenharia de computação:
+            </p>
+            <ul>
+                <li><strong>Gerenciamento Espiral de Memória:</strong> Organização dinâmica dos registradores que distribui as cargas de trabalho conforme a prioridade dos eventos de entrada, eliminando tempo de espera (latency).</li>
+                <li><strong>Paralelismo Nativo:</strong> Estrutura de hardware otimizada para execução de algoritmos de alta complexidade sem a necessidade de overclocking ou consumo excessivo de energia.</li>
+                <li><strong>Normalização e Integridade Referencial em Nível de Hardware:</strong> Tratamento direto de instruções estruturadas garantindo integridade de dados antes mesmo da gravação em camadas de persistência (bancos de dados).</li>
+            </ul>
+
+            <!-- Imagem Gerada do Chip AP-E -->
+            <div class="image-container">
+                <img src="watermarked_img_3496912330117067493.jpg" alt="Renderização Conceitual do Chip AP-E com Arquitetura em Espiral">
+                <p class="image-legenda">Representação Conceitual: Die do Chip AP-E com Trilha de Processamento em Espiral Contínua</p>
+            </div>
+        </section>
+
+        <section id="fomento">
+            <h2>3. Estratégia de Captação de Fomento a Fundo Perdido (P&D)</h2>
+            <p>
+                Para a fase de prototipagem avançada, fabricação do Die e testes em escala piloto, a <strong>CSGTI Tech Ltda.</strong> estrutura o plano de investimento com foco em editais de subvenção econômica e fomento a fundo perdido.
+            </p>
+            <div class="box-destaque">
+                <h3>Investimento e Soberania Tecnológica</h3>
+                <p>
+                    O modelo contempla a submissão formal de projetos junto a órgãos de incentivo tecnológico (como <strong>FINEP</strong>, <strong>FAPESQ</strong> e linhas de inovação do <strong>BNDES</strong>).
+                </p>
+                <p>
+                    Isso alinha diretamente o Chip AP-E às diretrizes nacionais de soberania em semicondutores e desenvolvimento de tecnologia de ponta no Brasil.
+                </p>
+            </div>
+        </section>
+
+        <section id="aplicacoes">
+            <h2>4. Aplicações Práticas, Mercado e Impacto nas Big Techs</h2>
+            <p>O Chip AP-E foi concebido para atender setores críticos que exigem altíssimo desempenho:</p>
+            <ul>
+                <li><strong>Automação e Robótica Industrial:</strong> Processamento imediato de sensores operando em ambientes de manufatura inteligente (Indústria 4.0).</li>
+                <li><strong>Sistemas Financeiros e Transacionais:</strong> Validação instantânea de regras de negócio e prevenção a fraudes em milissegundos.</li>
+                <li><strong>Centros de Dados e Criptografia:</strong> Algoritmos de segurança e cifra executados nativamente nos barramentos da espiral.</li>
+            </ul>
+
+            <div class="box-destaque">
+                <h3>Disrupção Frente às Grandes Big Techs</h3>
+                <p>
+                    Enquanto gigantes da tecnologia global (como Google, AWS e Microsoft) buscam otimizar processadores tradicionais baseados em arquiteturas convencionais, a tecnologia da <strong>CSGTI Tech Ltda.</strong> propõe uma ruptura estrutural.
+                </p>
+                <p>
+                    O Chip AP-E oferece às <em>Big Techs</em> e provedores de nuvem uma alternativa altamente escalável para treinar modelos de inteligência artificial e processar big data com menor latência e eficiência energética superior.
+                </p>
+            </div>
+
+            <!-- Player de Vídeo Local (Basta salvar o vídeo como "chip-espiral.mp4" na mesma pasta) -->
+            <div class="video-container">
+                <video controls>
+                    <source src="chip-espiral.mp4" type="video/mp4">
+                    Seu navegador não suporta a exibição de vídeos.
+                </video>
+                <p class="video-legenda">Simulação Dinâmica: Arquitetura de Processamento em Espiral Contínua (AP-E)</p>
+            </div>
+        </section>
+
+        <section id="conclusao">
+            <h2>5. Conclusão e Próximos Passos</h2>
+            <p>
+                O projeto encontra-se em fase de consolidação lógica e documentação de patente de inovação, posicionando a <strong>CSGTI Tech Ltda.</strong> na vanguarda do desenvolvimento de semicondutores e arquiteturas computacionais de alto impacto.
+            </p>
+        </section>
+
     </div>
 
-    <h2>3. Aplicações Práticas no Mercado</h2>
-    <p>O Chip AP-E foi concebido para atender setores críticos que exigem altíssimo desempenho:</p>
-    <ul>
-      <li><strong>Automação e Robótica Industrial:</strong> Processamento imediato de sensores operando em ambientes de manufatura inteligente (Indústria 4.0).</li>
-      <li><strong>Sistemas Financeiros e Transacionais:</strong> Validação instantânea de regras de negócio e prevenção a fraudes em milissegundos.</li>
-      <li><strong>Centros de Dados e Criptografia:</strong> Algoritmos de segurança e cifra executados nativamente nos barramentos da espiral.</li>
-    </ul>
-
-    <h2>4. Conclusão e Próximos Passos</h2>
-    <p>
-      O projeto encontra-se em fase de consolidação lógica e documentação de patente de inovação, posicionando a CSGTI Tech Ltda. na vanguarda do desenvolvimento de semicondutores e arquiteturas computacionais de alto impacto.
-    </p>
-  </div>
-
-  <footer>
-    &copy; 2026 CSGTI Tech Ltda. — Todos os direitos reservados.
-  </footer>
+    <footer>
+        <p><strong>CSGTI Tech Ltda.</strong></p>
+        <p>Divisão de Semicondutores — Dossiê Técnico Chip AP-E</p>
+        <p>&copy; 2026 Todos os direitos reservados.</p>
+    </footer>
 
 </body>
 </html>
