@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dossiê Técnico — Chip AP-E | CSGTI Tech Ltda.</title>
+    <title>Projeto Chip Espiral (AP-E) — CSGTI Tech Ltda.</title>
     <style>
         * {
             margin: 0;
@@ -30,13 +30,17 @@
         }
 
         header h1 {
-            font-size: 34px;
-            margin-bottom: 8px;
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #ffffff;
         }
 
+        /* Subtítulo corrigido com excelente contraste e legibilidade */
         header p {
-            font-size: 16px;
-            opacity: 0.9;
+            font-size: 18px;
+            color: #e0f2fe;
+            font-weight: 500;
+            opacity: 1;
         }
 
         nav {
@@ -213,8 +217,8 @@
 <body>
 
     <header>
-        <h1>DOSSIÊ TÉCNICO: CHIP AP-E</h1>
-        <p>Arquitetura de Processamento Espiral (AP-E) — CSGTI Tech Ltda.</p>
+        <h1>PROJETO CHIP ESPIRAL (AP-E)</h1>
+        <p>Arquitetura de Processamento em Espiral Contínua — CSGTI Tech Ltda.</p>
     </header>
 
     <nav aria-label="Navegação interna">
@@ -231,13 +235,13 @@
         <div class="meta-info">
             <p><strong>Tecnologia:</strong> Arquitetura de Processamento Espiral (AP-E)</p>
             <p><strong>Propriedade Intelectual:</strong> CSGTI Tech Ltda. | <strong>Idealizador:</strong> Moisés Jovino</p>
-            <p><em>Formato de Apresentação Acadêmica (Slides & Web)</em></p>
+            <p><em>Apresentação Acadêmica para o Prof. Daniel (UNIPÊ)</em></p>
         </div>
 
         <section id="visao-geral">
-            <h2>1. Visão Geral e Conceito do Chip AP-E</h2>
+            <h2>1. Visão Geral e Conceito do Chip Espiral</h2>
             <p>
-                O <strong>Chip AP-E</strong> representa um salto qualitativo no paradigma de processamento de dados. Ao contrário das arquiteturas tradicionais von Neumann baseadas na execução linear e sequencial de instruções, o AP-E utiliza o princípio de <em>Processamento em Espiral Contínua</em>.
+                O <strong>Projeto Chip Espiral (AP-E)</strong> representa um salto qualitativo no paradigma de processamento de dados. Ao contrário das arquiteturas tradicionais von Neumann baseadas na execução linear e sequencial de instruções, o AP-E utiliza o princípio de <em>Processamento em Espiral Contínua</em>.
             </p>
             <p>
                 Essa abordagem reduz drasticamente os gargalos de barramento (<em>bus bottleneck</em>), permitindo que fluxos de dados massivos e eventos concorrentes sejam analisados e processados simultaneamente em ciclos espirais de instrução.
@@ -247,7 +251,7 @@
         <section id="engenharia">
             <h2>2. Engenharia e Arquitetura de Desenvolvimento</h2>
             <p>
-                O desenvolvimento lógico e físico do Chip AP-E baseia-se em três pilares fundamentais de engenharia de computação:
+                O desenvolvimento lógico e físico do Chip Espiral baseia-se em três pilares fundamentais de engenharia de computação:
             </p>
             <ul>
                 <li><strong>Gerenciamento Espiral de Memória:</strong> Organização dinâmica dos registradores que distribui as cargas de trabalho conforme a prioridade dos eventos de entrada, eliminando tempo de espera (latency).</li>
@@ -255,10 +259,10 @@
                 <li><strong>Normalização e Integridade Referencial em Nível de Hardware:</strong> Tratamento direto de instruções estruturadas garantindo integridade de dados antes mesmo da gravação em camadas de persistência (bancos de dados).</li>
             </ul>
 
-            <!-- Imagem Gerada do Chip AP-E -->
+            <!-- Imagem Renderizada do Chip Espiral -->
             <div class="image-container">
-                <img src="watermarked_img_3496912330117067493.jpg" alt="Renderização Conceitual do Chip AP-E com Arquitetura em Espiral">
-                <p class="image-legenda">Representação Conceitual: Die do Chip AP-E com Trilha de Processamento em Espiral Contínua</p>
+                <img src="chip-espiral.jpg" alt="Renderização Conceitual do Chip Espiral com Arquitetura em Espiral">
+                <p class="image-legenda">Representação Conceitual: Die do Chip Espiral com Trilha de Processamento em Espiral Contínua</p>
             </div>
         </section>
 
@@ -273,14 +277,14 @@
                     O modelo contempla a submissão formal de projetos junto a órgãos de incentivo tecnológico (como <strong>FINEP</strong>, <strong>FAPESQ</strong> e linhas de inovação do <strong>BNDES</strong>).
                 </p>
                 <p>
-                    Isso alinha diretamente o Chip AP-E às diretrizes nacionais de soberania em semicondutores e desenvolvimento de tecnologia de ponta no Brasil.
+                    Isso alinha diretamente o Chip Espiral às diretrizes nacionais de soberania em semicondutores e desenvolvimento de tecnologia de ponta no Brasil.
                 </p>
             </div>
         </section>
 
         <section id="aplicacoes">
             <h2>4. Aplicações Práticas, Mercado e Impacto nas Big Techs</h2>
-            <p>O Chip AP-E foi concebido para atender setores críticos que exigem altíssimo desempenho:</p>
+            <p>O Chip Espiral foi concebido para atender setores críticos que exigem altíssimo desempenho:</p>
             <ul>
                 <li><strong>Automação e Robótica Industrial:</strong> Processamento imediato de sensores operando em ambientes de manufatura inteligente (Indústria 4.0).</li>
                 <li><strong>Sistemas Financeiros e Transacionais:</strong> Validação instantânea de regras de negócio e prevenção a fraudes em milissegundos.</li>
@@ -293,13 +297,13 @@
                     Enquanto gigantes da tecnologia global (como Google, AWS e Microsoft) buscam otimizar processadores tradicionais baseados em arquiteturas convencionais, a tecnologia da <strong>CSGTI Tech Ltda.</strong> propõe uma ruptura estrutural.
                 </p>
                 <p>
-                    O Chip AP-E oferece às <em>Big Techs</em> e provedores de nuvem uma alternativa altamente escalável para treinar modelos de inteligência artificial e processar big data com menor latência e eficiência energética superior.
+                    O Chip Espiral oferece às <em>Big Techs</em> e provedores de nuvem uma alternativa altamente escalável para treinar modelos de inteligência artificial e processar big data com menor latência e eficiência energética superior.
                 </p>
             </div>
 
-            <!-- Player de Vídeo Local (Basta salvar o vídeo como "chip-espiral.mp4" na mesma pasta) -->
+            <!-- Player de Vídeo Local -->
             <div class="video-container">
-                <video controls>
+                <video controls autoplay muted>
                     <source src="chip-espiral.mp4" type="video/mp4">
                     Seu navegador não suporta a exibição de vídeos.
                 </video>
@@ -318,7 +322,7 @@
 
     <footer>
         <p><strong>CSGTI Tech Ltda.</strong></p>
-        <p>Divisão de Semicondutores — Dossiê Técnico Chip AP-E</p>
+        <p>Projeto Chip Espiral — Divisão de Semicondutores</p>
         <p>&copy; 2026 Todos os direitos reservados.</p>
     </footer>
 
