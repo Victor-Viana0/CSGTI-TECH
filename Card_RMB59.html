@@ -1,85 +1,215 @@
-<html>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <head>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-    body { background-color: #0f2b48; color: #222; line-height: 1.7; BacKground-image: linear-gradient(#0f2b48,rgba(0, 0, 3, 0.288)) }
-    header a { color: #fff; text-decoration: none; font-weight: bold; text-align: center; }
-    .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
-    .voltar-link { display: inline-block; margin-bottom: 20px; color: #0f2b48; text-decoration: none; font-weight: bold; }
-    .voltar-link:hover { text-decoration: underline; }
-    h2 { color: #0f2b48; font-size: 22px; margin-top: 35px; margin-bottom: 15px; border-left: 4px solid #0f2b48; padding-left: 10px; }
-    p { margin-bottom: 18px; text-align: justify; color: #333; }
-    ul { margin-left: 25px; margin-bottom: 20px; }
-    li { margin-bottom: 8px; }
-    .box-destaque { background: #f0f4f8; border: 1px solid #d0dfec; padding: 20px; border-radius: 6px; margin: 25px 0; }
-    .box-destaque h3 { color: #0f2b48; margin-bottom: 10px; }
-    footer { background: #0b1e33; color: #a0b2c6; text-align: center; padding: 20px; margin-top: 60px; font-size: 13px; }
-    header {background-color: #133457;width: 100%;display: block;padding: 20px;text-align: center; background-image: linear-gradient(#133457,#1e3e61);
-}
-
-header h1 {color: white;font-size: 100px;text-align: center;border: none;padding: 0;margin: 0;width: 100%;
-}
-
-section {
-  display: flex;
-}
-nav {
-  flex: 1;
-  background-color: #0f2b48;
-  padding: 15px;
-}
-nav ul {
-  list-style-type: none;
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Refina Mais Brasil Five Nine</title>
+<style>
+* {
+  margin: 0;
   padding: 0;
-}article {
-  flex: 4;
-  background-color: #c3d0e0;
-  padding: 15px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-article h2 {
-  font-size: 2rem;
+body {
+  background-color: #0f2b48;
+  color: #222;
+  line-height: 1.7;
+  background-image: linear-gradient(#0f2b48, rgba(0,0,3,0.288));
 }
-footer {
-  background-color: #c3d0e0;
+header {
+  background-color: #133457;
+  width: 100%;
   padding: 20px;
   text-align: center;
-  color: white;
+  background-image: linear-gradient(#133457, #1e3e61);
 }
-    @media (max-width: 600px) {
-  section {
-    flex-direction: column;
+header h1 {
+  color: white;
+  font-size: clamp(30px, 7vw, 70px);
+  text-align: center;
+  border: none;
+  padding: 0;
+}
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+.galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  max-width: 1800px;
+  margin: auto;
+}
+.galeria figure {
+  flex: 1 1 350px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.galeria figure img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+.galeria figcaption {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: #133457;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  min-height: 45px;
+  outline: none;
+}
+.galeria figcaption:focus {
+  border-color: #ffffff;
+  background-color: #1e456d;
+}
+.galeria img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.45);
+  transition: transform 0.3s ease;
+}
+.galeria img:hover {
+  transform: scale(1.05);
+}
+@media (min-width: 1200px) {
+  .galeria figure {
+    flex: 1 1 400px;
+    max-width: 420px;
+  }
+  .galeria img {
+    height: 400px;
   }
 }
-  </style>
-  </head>
-  <header><h1><strong>Refina Mais Brasil Five Nine</strong></h1></header>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9hmEEEx_StwH6_mSOwBJF-yfBmpSzUkWbQmv9wnbqNw&s=10"
-     alt="Refina Mais Brasil 5N"
-     style="width:38%; display:block; margin: 0 auto 15px auto; border-radius:5px; float:left ;">
-
-     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3CgoE-8JpAZC7SOGq67KvSznF_Wfr4I5TkamBC3Ex_g&s=10"
-     alt="Refina Mais Brasil 5N"
-     style="width:40%; display:block; margin: 0 auto 15px auto; border-radius:5px;">
-
-
-     <img src="https://imagens.ebc.com.br/1G0laUv1Nd3sz6xaakOAyJeFCKk=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2025/04/22/sigma-lithium-litio-jequitinhonh.jpeg?itok=E_oW8sHb"
-     alt="Refina Mais Brasil 5N"
-     style="width:1%; display:block; margin: 0 auto 15px auto; border-radius:5px; opacity:0%;">
-
-
-     <img src="https://imagens.ebc.com.br/1G0laUv1Nd3sz6xaakOAyJeFCKk=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2025/04/22/sigma-lithium-litio-jequitinhonh.jpeg?itok=E_oW8sHb"
-     alt="Refina Mais Brasil 5N"
-     style="width:40%; display:block; margin: 0 auto 15px auto; border-radius:5px; float:left">
-
-     <img src="https://www12.senado.leg.br/noticias/infomaterias/2026/06/o-futuro-e-o-presente-nas-terras-raras/mineracao/@@images/imagem"
-     alt="Refina Mais Brasil 5N"
-     style="width:35%; display:block; margin: 0 auto 15px auto; border-radius:5px;">
-
-    </ul> 
-  <article>
-   <h2>Tecnologia proprietária para o refino industrial de terras raras e minerais estratégicos. Alcança o grau extremo de pureza 59 (99,999%), garantindo matéria-prima de alto valor agregado para a indústria de semicondutores, defesa e transição energética.</h2>
-  </article>
-<footer><a href="refina-59.html" class="btn-saiba-mais">Saiba Mais (Dossiê Completo)</a></footer>
+@media (max-width: 600px) {
+  .galeria {
+    gap: 15px;
+  }
+  .galeria figure {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .galeria img {
+    height: 260px;
+  }
+}
+article {
+  background-color: #c3d0e0;
+  padding: 25px;
+  margin: 20px;
+  border-radius: 8px;
+}
+article h2 {
+  color: #0f2b48;
+  font-size: 1.5rem;
+  border-left: 4px solid #0f2b48;
+  padding-left: 12px;
+}
+footer {
+  background-color: #0b1e33;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 600px) {
+  .galeria {
+    gap: 12px;
+  }
+  .galeria figure {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .galeria img {
+    height: 220px;
+  }
+  article h2 {
+    font-size: 1.1rem;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1><strong>Refina Mais Brasil Five Nine</strong></h1>
+</header>
+<div class="galeria">
+  <figure>
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkCdIasS4atObnztY8CDeIw6FkFCIyRp-ZLyVBf3XGyO7PT2LW-be8pz6i&s=10"
+      alt="Coleta das Terras">
+      <figcaption >Coleta das Terras Raras Através da Mineração</figcaption>
+  </figure>
+  <figure>
+    <img
+      src="https://s2-oglobo.glbimg.com/Lzq1qzqauH9tRtZ7KbAD4PhMjq4=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2023/H/J/WPNOpRRfWAscx4UZIo0g/sigma1.jpg"
+      alt="Planta de Mineração">
+      <figcaption>Planta Onde Os Caminhões Despejam As Terras Para Iniciar O Processo de Separação</figcaption>
+  </figure>
+  <figure>
+    <img
+      src="https://imagens.ebc.com.br/1G0laUv1Nd3sz6xaakOAyJeFCKk=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2025/04/22/sigma-lithium-litio-jequitinhonh.jpeg?itok=E_oW8sHb"
+      alt="Separação das terras">
+      <figcaption>O Processo de Separação Em Questão</figcaption>
+  </figure>
+  <figure>
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3CgoE-8JpAZC7SOGq67KvSznF_Wfr4I5TkamBC3Ex_g&s=10"
+      alt="Laboratorio de Refinação">
+      <figcaption>Laboratório Onde Ocorre Os Processos de Refinação</figcaption>
+  </figure>
+   <figure>
+    <img
+      src="https://conteudo.imguol.com.br/c/entretenimento/da/2025/03/06/amostras-de-minerais-de-terras-raras-oxido-de-cerio-bastnasita-oxido-de-neodimio-e-carbonato-de-lantanio-1741301648121_v2_900x506.jpg"
+      alt="Terras Raras Pós Refinação">
+      <figcaption>Como As Terras Raras Ficam Depois da Refinação</figcaption>
+  </figure>
+  <figure>
+    <img
+      src="https://imagens.publico.pt/imagens.aspx/1849768?tp=UH&db=IMAGENS&type=JPG&w=1800&act=resize"
+      alt="Laboratorio de Refinação">
+      <figcaption>Outro Exemplo De Como As Terras Raras Ficam Depois da Refinação</figcaption>
+  </figure>
+</div>
+<article>
+  <h2>
+    Tecnologia proprietária para o refino industrial de terras raras e
+    minerais estratégicos. Alcança o grau extremo de pureza 59 (99,999%),
+    garantindo matéria-prima de alto valor agregado para a indústria de
+    semicondutores, defesa e transição energética.
+  </h2>
+</article>
+<footer>
+  <a href="refina-59.html" class="btn-saiba-mais">
+    Saiba Mais (Dossiê Completo)
+  </a>
+</footer>
+</body>
 </html>
