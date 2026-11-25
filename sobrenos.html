@@ -3,10 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nós</title>
-</head>
-<body>
- <a href="index.html"> Home </a>
+     <link rel="stylesheet" href="./style.css"> 
+    <style>
+          * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+          }
+
+          html {
+              scroll-behavior: smooth;
+          }
+
+          body {
+              font-family: Arial, sans-serif;
+              background: #f3f6fa;
+              color: #243247;
+              line-height: 1.7;
+          }
+
+          header {
+              background: linear-gradient(
+                  135deg, #071b35, #116b87
+              );
+              color: white;
+              text-align: center;
+              padding: 65px 20px;
+          }
+
+          header h1 {
+              font-size: 38px;
+              margin-bottom: 12px;
+          }
+
+          header p {
+              font-size: 17px;
+          }
+
+          nav {
+              background: #102d4b;
+              padding: 16px;
+              text-align: center;
+          }
+
+          nav a {
+              color: white;
+              text-decoration: none;
+              font-weight: bold;
+              margin: 0 12px;
+              display: inline-block;
+          }
+
+          nav a:hover {
+              color: #60e0c4;
+          }
+
+          main {
+              max-width: 1100px;
+              margin: 35px auto;
+              padding: 0 20px;
+          }
+
+          section {
+              background: white;
+              padding: 30px;
+              margin-bottom: 25px;
+              border-radius: 12px;
+              box-shadow: 0 4px 14px #00000010;
+          }
+
+          h2 {
+              color: #116b87;
+              margin-bottom: 18px;
+          }
+
+          h3 {
+              color: #102d4b;
+              margin-bottom: 10px;
+          }
+
+          p {
+              margin-bottom: 12px;
+          }
+
+          ul, ol {
+              padding-left: 25px;
+          }
+
+          li {
+              margin-bottom: 10px;
+          }
+
+          .destaque {
+              background: #e6f7f4;
+              border-left: 5px solid #149b83;
+              padding: 18px;
+              border-radius: 6px;
+              margin-top: 20px;
+          }
+
+          .cards {
+              display: grid;
+              grid-template-columns:
+                  repeat(auto-fit, minmax(220px, 1fr));
+              gap: 20px;
+              margin-top: 20px;
+          }
+
+          .card {
+              background: #edf5fa;
+              padding: 22px;
+              border-radius: 10px;
+              border-top: 4px solid #116b87;
+          }
+
+          .card p {
+              margin-bottom: 0;
+          }
+
+          footer {
+              background: #071b35;
+              color: white;
+              text-align: center;
+              padding: 30px 20px;
+          }
+
+          @media (max-width: 600px) {
+              header h1 {
+                  font-size: 27px;
+              }
+
+              nav a {
+                  margin: 7px;
+                  font-size: 14px;
+              }
+
+              section {
+                  padding: 20px;
+              }
+          }
+      </style>
+      
+      <title>Sobre Nós</title>
+  </head>
+  <body>
+    <nav aria-label="Menu principal">
+        <a href="index.html"> Home </a>
+          <a href="produto.html">Produtos</a>
+          <a href="contato.html">Contato</a>
+          <a href="sobrenos.html">Sobre</a>
+
 
  <section id="quem-somos" style="max-width: 900px; margin: 40px auto; padding: 20px; line-height: 1.7; color: #222;">
   <h2 style="color: #0f2b48; font-size: 28px; border-bottom: 3px solid #0f2b48; padding-bottom: 10px; margin-bottom: 20px;">Quem Somos</h2>
@@ -30,5 +176,18 @@
     Na <strong>CS-GTI Tech</strong>, conectamos o rigor acadêmico às demandas reais do mercado por meio de parcerias estratégicas com universidades públicas, centros de pesquisa e agências de fomento à inovação. Nossa missão é transformar propriedade intelectual nacional em tecnologias disruptivas, escaláveis e ambientalmente responsáveis.
   </p>
 </section>
+
+
+
+  <footer>
+    <p><strong>CSGTI Tech Ltda.</strong></p>
+
+    <p>
+      Inovação, pesquisa e desenvolvimento tecnológico
+    </p>
+
+    <p>© 2026 Todos os direitos reservados.</p>
+  </footer>
+
 </body>
 </html>
